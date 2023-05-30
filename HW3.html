@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //         Задание 1
+        // Создайте функцию которая возводит переданное число в куб, необходимо вывести в консоль результат 2 ^ 3 степени + 3 ^ 3 степени
+
+        const chislo = num => num ** 3;
+        console.log(chislo(2));
+        console.log(chislo(2) + chislo(3));
+
+
+
+        // Задание 2
+        // Пользователь вводит с клавиатуры число, если ввёл текст, необходимо вывести что значение задано неверно
+
+
+        // const anum = prompt('введите число');
+        // if (anum = type(Number)) {
+        //     console.log('верно');
+        // } else {
+        //     console.log('неверно');
+        // }
+
+
+        // Создать фукнцию, которая высчитывает 13 % от данного числа и выводит в консоль текст "Размер заработной платы за вычетом налогов равен значение"
+
+        const pay = num => num - (num * 13 / 100);
+        console.log(`Размер заработной платы за вычетом налогов равен ${pay(20000)}`);
+
+
+        // Задание 3
+        // Пользователь с клавиатуры вводит 3 числа, необходимо создать функцию, которая определяет максимальное значение среди этих чисел
+
+        function checkNumberMax(a, b, c) {
+            // Number(prompt(`input ${a}, ${b}, ${c}`));
+            if (a > b) {
+                console.log(`max ${a}`);
+            }
+            else if (b > c) {
+                console.log(`max ${b}`);
+            }
+            else {
+                console.log(`max ${c}`);
+            }
+        }
+        checkNumberMax(10, 4, 5);
+
+
+        // Задание 4
+        // Необходимо реализовать четыре функции, каждая функция должна принимать по два числа и выполнять одну из операций(каждая функция выполняет одну из них):
+        //         1. Сложение
+        //         2. Разность
+        //         3. Умножение
+        //         4. Деление
+        // Необходимо сделать так, чтобы функция вернула число, например выражение console.log(sum(2, 6)); должно вывести число 8 в консоль(sum - функция сложения в данном примере, ваши названия функций могут отличаться).Округлять значения, которые возвращают функции не нужно, однако, обратите внимание на разность, функция должна вычесть из большего числа меньшее, либо вернуть 0, если числа равны.Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать не нужно.
+
+        function addition(v, n) {
+            console.log(v + n);
+        }
+        addition(3, 6);
+
+        function subtraction(x, z) {
+            if (x > z) {
+                console.log(x - z);
+            }
+            else if (z > x) {
+                console.log(z - x);
+            }
+            else {
+                console.log(0);
+            }
+
+        }
+        subtraction(89, 56);
+
+        function multiplication(r, y) {
+            console.log(r * y);
+        }
+        multiplication(3, 5);
+
+        function division(h, o) {
+            console.log(h / o);
+        }
+        division(54, 10);
+
+        // const addition = sum => sum1 + sum2;
+        // console.log(addition(3, 6));
+
+
+
+    </script>
+</body>
+
+</html>
